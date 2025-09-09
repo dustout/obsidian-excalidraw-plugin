@@ -133,7 +133,7 @@ Example to delete the selected elements from the view:
 ea = ExcalidrawAutomate;
 ea.setView("active");
 el = ea.getViewSelectedElements();
-ea.deleteViewElements();
+ea.deleteViewElements(el);
 ```
 
 #### getViewSelectedElement()
@@ -219,3 +219,4 @@ ea.onDropHook = (data) => {
   return false;
 }
 ```
+
